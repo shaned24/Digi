@@ -1,0 +1,52 @@
+<a href="/">Home</a> / Categories
+
+<div class="jumbotron">
+    <h1>Digi Languages</h1>
+    <h2 style="font-size:30px; margin-top:40px;">Student</h2>
+</div>
+
+
+<div style="position: fixed; right: 100px; margin-top:-200px">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Work Package 1</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Work Package 2</a></li>
+            <li><a href="#">Work Package 3</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr class="divider">
+
+<div class="col-lg-2">
+    
+    <div class="panel panel-default" ng-repeat="category in categories.categories" style="cursor: pointer;" ng-click="expanded = !expanded" data-toggle="collapse" data-target="#demo{{category}}">
+        <!-- Default panel contents -->
+               
+        <div class="panel-heading">Category {{category}} <i   class="pull-right" ng-class="{ 'glyphicon glyphicon-chevron-down' : expanded, 'glyphicon glyphicon-chevron-up' : !expanded}" ></i></div>
+        <div id="demo{{category}}" class="panel-body collapse" aria-expanded="false">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas non lorem vel efficitur. Mauris facilisis
+                volutpat tortor, eget sagittis mauris interdum eget.</p>
+        
+            <!-- List group -->
+            <ul class="list-group" id="demo">
+                <a href="/sub-categories" class="list-group-item">
+                    <h4 class="list-group-item-heading">Sub Category 1</h4>
+                </a>
+                <a href="/sub-categories" class="list-group-item">
+                    <h4 class="list-group-item-heading">Sub Category 2</h4>
+                </a>
+                <a href="/sub-categories" class="list-group-item">
+                    <h4 class="list-group-item-heading">Sub Category 3</h4>
+                    <!--<p class="list-group-item-text">...</p>-->
+                </a>
+            </ul>
+        </div>
+    </div>
+    
+   
+</div>

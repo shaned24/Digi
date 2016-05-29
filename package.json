@@ -79,5 +79,8 @@
   "scripts": {
     "test": "./node_modules/.bin/gulp test"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
 }

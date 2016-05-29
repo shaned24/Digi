@@ -1,10 +1,16 @@
-<h1 class="heading -large">{{ home.title | ExampleFilter }}</h1>
+<a href="/">Home</a>
+<div class="container">
 
-<h3 class="heading -medium">Here is a fancy number served up courtesy of Angular: <span class="number-example">{{ home.number }}</span></h3>
+    <div class="row">
+        <h2>Welcome to DigiLanguages</h2>
+        <a ng-click="clicked = true" class="btn btn-primary">Student</a>
+        <a ng-click="clicked = true" class="btn btn-success">Teacher</a>
+    </div>
 
-<img src="images/angular.png" height="100" />
-<img src="images/gulp.png" height="100" />
-<img src="images/browserify.png" height="100" />
+    <div class="row" ng-show="clicked">
+        <a href="/categories" class="btn success">Wp 1</a>
+        <a href="/categories" class="btn success">Wp 2</a>
+        <a href="/categories" class="btn success">Wp 3</a>
+    </div>
 
-<hr/>
-<div example-directive title="WOW!" click-message="You clicked me!">Directive is not loaded.</div>
+</div>
